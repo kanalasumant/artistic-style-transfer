@@ -56,7 +56,7 @@ make sure it looks like the following:
    ````
 
 5. That's it! You can now start Jupyter and browse, open, run and
-modify the notebooks.
+modify the notebook.
 
    ````
    jupyter notebook
