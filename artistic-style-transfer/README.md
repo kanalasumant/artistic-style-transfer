@@ -1,4 +1,10 @@
-# Convolutional neural networks for artistic style transfer
+# Convolutional neural networks for artistic style transfer using two or more styles.
+
+This is an addition to the well developed code by [hnarayan](https://github.com/hnarayan).
+
+I have added code for two styles being applied to an image. This is done by taking the mean of the gram matrices of the stylized images and then minimizing their loss.
+
+Check the code for more details.
 
 This repository contains (TensorFlow and Keras) code that goes along
 with a [related blog post][blog-post] and [talk
@@ -55,31 +61,3 @@ modify the notebooks.
    ````
    jupyter notebook
    ````
-
-## Contents
-
-### iPython Notebooks
-
-1. [A linear classifier for MNIST data][linear-mnist]
-2. [A neural network-based classifier for MNIST data (Attempt 1)][neural-mnist-1]
-3. [A neural network-based classifier for MNIST data (Attempt 2)][neural-mnist-2]
-4. [A convolutional neural network-based classifier for MNIST data][convnet-mnist]
-5. [VGG Net (16) on ImageNet, the easy way][vggnet-imagenet]
-6. [Artistic style transfer with a repurposed VGG Net (16)][todo]
-
-### External Resources
-
-1. [Related blog post][blog-post]
-2. [Related talk slides][talk-slides]
-
-
-[blog-post]: https://harishnarayanan.org/writing/artistic-style-transfer/
-[talk-slides]: https://www.dropbox.com/s/969r7dj5nlboh7v/slides.pdf?dl=1
-[support-issue]: https://github.com/hnarayanan/artistic-style-transfer/issues
-[twitter]: https://twitter.com/copingbear
-[linear-mnist]: notebooks/1_Linear_Image_Classifier.ipynb
-[neural-mnist-1]: notebooks/2_Neural_Network-based_Image_Classifier-1.ipynb
-[neural-mnist-2]: notebooks/3_Neural_Network-based_Image_Classifier-2.ipynb
-[convnet-mnist]: notebooks/4_Convolutional_Neural_Network-based_Image_Classifier.ipynb
-[vggnet-imagenet]: notebooks/5_VGG_Net_16_the_easy_way.ipynb
-[todo]: notebooks/6_Artistic_style_transfer_with_a_repurposed_VGG_Net_16.ipynb
